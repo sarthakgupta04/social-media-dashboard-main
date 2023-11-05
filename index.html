@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div>
+          <h1 class="heading--main">Social Media Dashboard</h1>
+          <p class="heading--sub">Total Followers: 23,004</p>
+        </div>
+        <div class="toggle__wrapper">
+          <p class="toggle__label">Dark Mode</p>
+          <input type="checkbox" id="toggle" class="toggle__input" />
+          <label for="toggle" class="toggle__switch"></label>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="card-grid card-grid--top">
+        <div class="card card--lg card--facebook">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-facebook.svg"
+              alt=""
+            /><span>@nathanf</span>
+          </div>
+          <div class="card__total">1987</div>
+          <div class="card__followers">Followers</div>
+          <div class="card__latest card__latest--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            /><span>12 Today</span>
+          </div>
+        </div>
+
+        <div class="card card--lg card--twitter">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-twitter.svg"
+              alt=""
+            /><span>@nathanf</span>
+          </div>
+          <div class="card__total">1044</div>
+          <div class="card__followers">Followers</div>
+          <div class="card__latest card__latest--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            /><span>99 Today</span>
+          </div>
+        </div>
+
+        <div class="card card--lg card--instagram">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-instagram.svg"
+              alt=""
+            />
+            <span>@realnathanf</span>
+          </div>
+          <div class="card__total">11k</div>
+          <div class="card__followers">Followers</div>
+          <div class="card__latest card__latest--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            /><span>1099 Today</span>
+          </div>
+        </div>
+
+        <div class="card card--lg card--youtube">
+          <div class="card__handle">
+            <img
+              class="card__handle-icon"
+              src="./images/icon-youtube.svg"
+              alt=""
+            />
+            <span>Nathan F.</span>
+          </div>
+          <div class="card__total">8239</div>
+          <div class="card__followers">Subscribers</div>
+          <div class="card__latest card__latest--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            /><span>144 Today</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="heading--secondary">Overview - Today</h2>
+
+      <div class="card-grid card-grid--bottom">
+        <div class="card card--sm">
+          <span class="card__daily-result">Page Views</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-facebook.svg" alt="Facebook icon"
+          /></span>
+          <span class="card__daily-total">87</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>3%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-facebook.svg" alt="Facebook icon"
+          /></span>
+          <span class="card__daily-total">52</span>
+          <div class="card__daily-change card__daily-change--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            />
+            <span>2%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-instagram.svg" alt="Instagram icon"
+          /></span>
+          <span class="card__daily-total">5462</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>2257%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Profile Views</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-instagram.svg" alt="Instagram icon"
+          /></span>
+          <span class="card__daily-total">52k</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>1375%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Retweets</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-twitter.svg" alt="Twitter icon"
+          /></span>
+          <span class="card__daily-total">117</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>303%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-twitter.svg" alt="Twitter icon"
+          /></span>
+          <span class="card__daily-total">507</span>
+          <div class="card__daily-change card__daily-change--up">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-up.svg"
+              alt="Up icon"
+            />
+            <span>553%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Likes</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-youtube.svg" alt="YouTube icon"
+          /></span>
+          <span class="card__daily-total">107</span>
+          <div class="card__daily-change card__daily-change--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            />
+            <span>19%</span>
+          </div>
+        </div>
+
+        <div class="card card--sm">
+          <span class="card__daily-result">Total Views</span>
+          <span class="card__daily-icon"
+            ><img src="./images/icon-youtube.svg" alt="YouTube icon"
+          /></span>
+          <span class="card__daily-total">1407</span>
+          <div class="card__daily-change card__daily-change--down">
+            <img
+              class="card__trend-icon"
+              src="./images/icon-down.svg"
+              alt="Down icon"
+            />
+            <span>12%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/GK-Hynes">Gerard Hynes</a>.
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
